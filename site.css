@@ -15,6 +15,25 @@ margin-bottom: 30px;
 .header-line{
 padding-top: 20px;
 display: flex;
+flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+gap: 20px;
+display: flex;
+    justify-content: space-between;
 }
 
 .nav-item{
@@ -22,13 +41,30 @@ color: #351b02;
 align-items: center;
 text-decoration: none;
 font-weight: 700;
-font-size: 30px;
 transition: color 0.2s linear;
-margin-right: 50px;
+ margin-right: 3rem;
+    font-size: 1.5rem;
 }
 
 .nav-item:hover{
 color: #c5670a
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        font-size: 24px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 .header-title{
@@ -48,20 +84,46 @@ margin-top: 15px;
 
 .header-down{
 display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .header-title {
+        font-size: 36px;
+    }
+
+    .header-text {
+        font-size: 16px;
+        width: auto;
+        text-align: center;
+    }
+
+    .nav-item {
+        font-size: 24px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 img{
 margin: 30px 30px;
 }
 
-.drinks-holder{
-display: flex;
-margin: 0px 100px;
+.drinks-holder {
+    display: flex;
+    margin: 0 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.img2{
-margin-left: 300px;
-margin-top: -20px;
+.img2 {
+    width: 100%;
+    height: auto;
 }
 
 .drinks-main{
@@ -70,19 +132,46 @@ margin-left: 100px;
 color: #6d3804;
 }
 
-.drinks-title{
-font-weight: 700;
+.drinks-title {
+    font-weight: 700;
+    margin-left: 50px;
+margin-top: 20px;
+}
+
+.lemonade-title{
+margin-left: 50px;
+margin-top: 20px;
 }
 
 .lemonade-holder{
 display: flex;
-margin: 0px -100px;
+margin: 0px 20px;
 font-weight: 700;
+flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .drinks-holder, .lemonade-holder {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .drinks-title, .lemonade-title {
+        text-align: center;
+    }
 }
 
 .discount{
 color: #6d3804;
 margin-top: 80px;
+text-align: center;
 }
 
 .map img {
@@ -94,8 +183,15 @@ padding-top: 80px;
 }
 
 .img8{
-margin: 0px 390px;
+margin: 0px 300px;
+display: inline-block;
+max-width: 100%;
+margin-left: 140px;
 }
+
+.img8 img {
+    max-width: 100%;
+    height: auto;
 
 .feedback {
     padding: 10px 0;
@@ -106,6 +202,14 @@ margin: 10px auto;
 width: 500px;
 }
 
+.photolemonade {
+    margin-left: 120px;
+
+.photofood, .photolemonade {
+flex: 1;
+max-width: 500px;
+}
+}
 
 .feedback form label {
     font-size: 18px;
@@ -178,10 +282,10 @@ margin-left: 210px;
 
 table {
 background-image: url('back.avif');
-background-size: cover; /* Заставляет фон растягиваться по размеру ячейки */
-border: 2px  black; /* Устанавливаем черные границы */
+background-size: cover;
+border: 2px  black;
 }
 
 th {
-border: 2px solid black; /* Устанавливаем черные границы для ячеек */
+border: 2px solid black;
 }
