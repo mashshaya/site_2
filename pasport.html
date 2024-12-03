@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Паспорт</title>
+
+    <style>
+        body {
+            background-image: url(a1.jpg);
+            background-position: center-bottom;
+            background-repeat: no-repeat;
+            }
+            .b1 {
+            margin-left: 80px;
+            margin-top: 56px;
+            font: bold 100% serif;
+            }
+            .b2 {
+            margin-left: 70px;
+            margin-top: 26px;
+            font: bold 100% serif;
+            }
+            .b3 {
+            margin-left: 270px;
+            margin-top: -18px;
+            font: bold 100% serif;
+            }
+            .b4 {
+            margin-left: 200px;
+            margin-top: 186px;
+            font: bold 100% serif;
+            }
+            .b5 {
+            margin-left: 212px;
+            margin-top: 25px;
+            font: bold 100% serif;
+            }
+            .b6 {
+            margin-left: 195px;
+            margin-top: 3px;
+            font: bold 100% serif;
+            }
+            .b7 {
+            margin-left: 142px;
+            margin-top: 3px;
+            font: bold 100% serif;
+            }
+            .b8 {
+            margin-left: 230px;
+            margin-top: -13px;
+            font: bold 100% serif;
+            position: absolute;
+            }
+            .b9{
+            margin-left: 180px;
+            margin-top: 3px;
+            font: bold 100% serif;
+            position: absolute;
+            }
+            .Mashaphoto{
+            margin-left: 20px;
+            margin-top: -65px;
+            position: absolute;
+            }
+            .datapasport{
+margin-left: 571px;
+margin-top: -425px;
+position: absolute;
+}
+            .photo2 {
+            margin-left: 251px;
+            margin-top: -225px;
+            position: absolute;
+
+            }
+
+        button {
+            padding: 10px 20px;
+            background-color: #FF7518;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-left: 430px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<main>
+    <div class="passport">
+
+        <div class="b1" id="where">ГУ МВД ПО Г. МОСКВЕ</div>
+        <div class="b2"> 30.08.2091 </div>
+        <div class="b3"> 770-069 </div>
+        <div class="b4" id="surname">Ковалёва</div>
+        <div class="b5" id="name">Мария</div>
+        <div class="b6" id="father">Сергеевна</div>
+        <div class="b7" id="gender">Жен</div>
+        <div class="b8" id="birthdate">29.07.2005</div>
+        <div class="b9"> Москва </div>
+        <div class="Mashaphoto">
+            <img src="photo.jpg" height="120" width="100" title="Masha">
+        </div>
+        <div class="photo2">
+            <img src="rospis'.jpg" height="35" width="60" title="rospis'">
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="translateButton">Поменять</button>
+    </div>
+</main>
+
+
+<script>
+    document.getElementById('translateButton').addEventListener('click', function() {
+        const whereText = document.getElementById('where');
+        const surnameText = document.getElementById('surname');
+        const nameText = document.getElementById('name');
+        const patronymicText = document.getElementById('father');
+        const genderText = document.getElementById('gender');
+        const birthdateText = document.getElementById('birthdate');
+
+        if (whereText.innerText === 'ГУ МВД ПО Г. МОСКВЕ') {
+            whereText.innerText = 'MOSCOW GU MVD';
+            surnameText.innerText = 'Kovaleva';
+            nameText.innerText = 'Mariia';
+            genderText.innerText = 'Female';
+            patronymicText.innerText = 'Sergeevna';
+
+            birthdateText.innerText = 'XXIX.VII.MMV';
+        } else {
+            whereText.innerText = 'ГУ МВД ПО Г. МОСКВЕ';
+            surnameText.innerText = 'Ковалёва';
+            nameText.innerText = 'Мария';
+            patronymicText.innerText = 'Сергеевна';
+            genderText.innerText = 'Жен';
+            birthdateText.innerText = '29.07.2005';
+        }
+    });
+</script>
+
+</body>
+</html>

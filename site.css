@@ -1,0 +1,187 @@
+body{
+margin: 0;
+font-family: "Open Sans", sans-serif;
+background-image: url(background.jpg);
+height: 100vh;
+background-repeat: repeat;
+background-size: cover;
+}
+
+.container {
+margin: 0px 130px;
+margin-bottom: 30px;
+}
+
+.header-line{
+padding-top: 20px;
+display: flex;
+}
+
+.nav-item{
+color: #351b02;
+align-items: center;
+text-decoration: none;
+font-weight: 700;
+font-size: 30px;
+transition: color 0.2s linear;
+margin-right: 50px;
+}
+
+.nav-item:hover{
+color: #c5670a
+}
+
+.header-title{
+color: #6d3804;
+font-size: 50px;
+font-weight: 700;
+margin-top: 30px;
+}
+
+.header-text{
+color: #351b02;
+font-size: 18px;
+font-weight: 600;
+width: 444px;
+margin-top: 15px;
+}
+
+.header-down{
+display: flex;
+}
+
+img{
+margin: 30px 30px;
+}
+
+.drinks-holder{
+display: flex;
+margin: 0px 100px;
+}
+
+.img2{
+margin-left: 300px;
+margin-top: -20px;
+}
+
+.drinks-main{
+margin-top: 15px;
+margin-left: 100px;
+color: #6d3804;
+}
+
+.drinks-title{
+font-weight: 700;
+}
+
+.lemonade-holder{
+display: flex;
+margin: 0px -100px;
+font-weight: 700;
+}
+
+.discount{
+color: #6d3804;
+margin-top: 80px;
+}
+
+.map img {
+    position: absolute;
+}
+
+.map container{
+padding-top: 80px;
+}
+
+.img8{
+margin: 0px 390px;
+}
+
+.feedback {
+    padding: 10px 0;
+}
+
+.feedback form {
+margin: 10px auto;
+width: 500px;
+}
+
+
+.feedback form label {
+    font-size: 18px;
+}
+
+.feedback form input {
+    background: white;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.feedback form .q {
+    background: orange;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 20px 0;
+    width: 200px;
+    font-size: 15px;
+    margin-left: 130px;
+}
+
+.q{
+background: orange;
+color: #fff;
+border-radius: 20px;
+padding: 15px 30px;
+border: 0;
+text-decoration: none;
+font-weight: 700;
+font-size: 20px;
+transition: color 0.2s linear;
+}
+
+.btn:hover{
+color: brown;
+}
+
+.anketa{
+display: flex;
+justify-content: center
+margin: 10px -10px;
+}
+
+.zadacha1{
+padding: 10px 0;
+margin: 10px auto;
+width: 400px;
+}
+
+.zadacha1 form input{
+background: white;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin-top: 7px;
+
+    width: 50%;
+}
+
+.zadacha{
+padding: 10px 0;
+}
+
+
+.mmm {
+margin-left: 210px;
+}
+
+table {
+background-image: url('back.avif');
+background-size: cover; /* Заставляет фон растягиваться по размеру ячейки */
+border: 2px  black; /* Устанавливаем черные границы */
+}
+
+th {
+border: 2px solid black; /* Устанавливаем черные границы для ячеек */
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="site.css">
+    <title>algorytm</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="header-line">
+                 <div class="nav">
+                     <a class="nav-item" href="index.html" > Главная</a>
+                     <a class="nav-item" href="menu.html">Меню</a>
+                     <a class="nav-item" href="discounts.html">Акции</a>
+                     <a class="nav-item" href="contacts.html">О нас</a>
+                     <a class="nav-item" href="algorytm.html" style="color: #c66100;">Задача</a>
+                     <a class="nav-item" href="blocks.html">Заказ</a>
+                 </div>
+
+            </div>
+    </div>
+<div class="zadacha">
+<h1 align="center">1001. Имеется коробка со сторонами: A × B × C. <br> Определить, пройдёт ли она в дверь с размерами M × N</h1>
+<div class="zadacha1">
+
+    <form id="calcForm" action="https://www.google.com/search?" target="_blank">
+        <input type="hidden" name="q">
+        <label for="elementA">Введите значение A:</label>
+        <input type="number" id="elementA" name="elementA" value="A" required>
+        <br>
+
+        <label for="elementB">Введите значение B:</label>
+        <input type="number" id="elementB" name="elementB" value="B" required>
+        <br>
+
+        <label for="elementC">Введите значение C:</label>
+        <input type="number" id="elementC" name="elementC" value="C" required>
+        <br>
+
+        <label for="elementM">Введите значение M:</label>
+        <input type="number" id="elementM" name="elementM" value="M" required>
+        <br>
+
+        <label for="elementN">Введите значение N:</label>
+        <input type="number" id="elementN" name="q" name="elementN" value="N" required>
+        <br>
+
+        <button type="button" onclick="calc()">Рассчитать</button>
+        <button type="submit" value="Отправить форму">Отправить</button>
+
+    </form>
+
+    <h2>Результат: <span id="result"></span></h2>
+
+    <script>
+        function calc() {
+
+            let elementA = document.getElementById('elementA');
+            let elementB = document.getElementById('elementB');
+            let elementC = document.getElementById('elementC');
+            let elementM = document.getElementById('elementM');
+            let elementN = document.getElementById('elementN');
+
+            let a = parseFloat(elementA.value);
+            let b = parseFloat(elementB.value);
+            let c = parseFloat(elementC.value);
+            let m = parseFloat(elementM.value);
+            let n = parseFloat(elementN.value);
+
+            let x = [a, b, c];
+            let y = Math.max(...x);
+            x = x.filter(val => val !== y);
+
+            let width = x[0];
+            let height = x[1];
+
+            let result;
+            if ((width <= m && height <= n) || (width <= n && height <= m)) {
+                result = 'ДА';
+            } else {
+                result = 'НЕТ';
+            }
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+    </div>
+</div>
+</body>
+</html>

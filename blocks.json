@@ -1,0 +1,69 @@
+[
+  {
+    "id": "1",
+    "title": "Американо",
+    "vendor_code": "americano",
+    "description": "",
+    "price": 150,
+    "img": "am.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Эспрессо",
+    "vendor_code": "espresso",
+    "description": "",
+    "price": 100,
+    "img": "es.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Лимонад лимонный",
+    "vendor_code": "limonad",
+    "description": "",
+    "price": 300,
+    "img": "lim.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Печенье",
+    "vendor_code": "cookie",
+    "description": "",
+    "price": 80,
+    "img": "pe.jpg"
+  }
+  ,
+  {
+    "id": "5",
+    "title": "Сендвич",
+    "vendor_code": "sandwich",
+    "description": "",
+    "price": 210,
+    "img": "sa.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Капучино",
+    "vendor_code": "capuchino",
+    "description": "",
+    "price": 190,
+    "img": "ca.jpg"
+  },
+
+  {
+    "id": "7",
+    "title": "Сок яблочный",
+    "vendor_code": "applejuice",
+    "description": "",
+    "price": 120,
+    "img": "ap.jpg"
+  }
+  ,
+  {
+    "id": "8",
+    "title": "Чай чёрный",
+    "vendor_code": "blacktea",
+    "description": "",
+    "price": 200,
+    "img": "te.jpg"
+  }
+]
